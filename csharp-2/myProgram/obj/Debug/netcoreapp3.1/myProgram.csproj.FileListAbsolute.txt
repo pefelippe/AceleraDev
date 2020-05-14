@@ -1,0 +1,16 @@
+C:\Users\pedfe\codenation\csharp-2\myProgram\bin\Debug\netcoreapp3.1\myProgram.exe
+C:\Users\pedfe\codenation\csharp-2\myProgram\bin\Debug\netcoreapp3.1\myProgram.deps.json
+C:\Users\pedfe\codenation\csharp-2\myProgram\bin\Debug\netcoreapp3.1\myProgram.runtimeconfig.json
+C:\Users\pedfe\codenation\csharp-2\myProgram\bin\Debug\netcoreapp3.1\myProgram.runtimeconfig.dev.json
+C:\Users\pedfe\codenation\csharp-2\myProgram\bin\Debug\netcoreapp3.1\myProgram.dll
+C:\Users\pedfe\codenation\csharp-2\myProgram\bin\Debug\netcoreapp3.1\myProgram.pdb
+C:\Users\pedfe\codenation\csharp-2\myProgram\bin\Debug\netcoreapp3.1\Source.dll
+C:\Users\pedfe\codenation\csharp-2\myProgram\bin\Debug\netcoreapp3.1\Source.pdb
+C:\Users\pedfe\codenation\csharp-2\myProgram\obj\Debug\netcoreapp3.1\myProgram.csprojAssemblyReference.cache
+C:\Users\pedfe\codenation\csharp-2\myProgram\obj\Debug\netcoreapp3.1\myProgram.csproj.CoreCompileInputs.cache
+C:\Users\pedfe\codenation\csharp-2\myProgram\obj\Debug\netcoreapp3.1\myProgram.AssemblyInfoInputs.cache
+C:\Users\pedfe\codenation\csharp-2\myProgram\obj\Debug\netcoreapp3.1\myProgram.AssemblyInfo.cs
+C:\Users\pedfe\codenation\csharp-2\myProgram\obj\Debug\netcoreapp3.1\myProgram.csproj.CopyComplete
+C:\Users\pedfe\codenation\csharp-2\myProgram\obj\Debug\netcoreapp3.1\myProgram.dll
+C:\Users\pedfe\codenation\csharp-2\myProgram\obj\Debug\netcoreapp3.1\myProgram.pdb
+C:\Users\pedfe\codenation\csharp-2\myProgram\obj\Debug\netcoreapp3.1\myProgram.genruntimeconfig.cache
