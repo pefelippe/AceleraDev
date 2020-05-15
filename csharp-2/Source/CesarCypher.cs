@@ -1,90 +1,90 @@
 using System;
 using System.Diagnostics.Tracing;
 using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
 
 namespace Codenation.Challenge
 {
     public class CesarCypher : ICrypt, IDecrypt
     {
+        public static class Constants
+        {
+            public const int salto = 3;
+        }
 
         public string Crypt(string message)
         {
+            message = parseMessage(message);
+            return scrollArray(message, true);
+        }
 
+        public string Decrypt(string cryptedMessage)
+        {
+            cryptedMessage = parseMessage(cryptedMessage);
+            return scrollArray(cryptedMessage, false);
+        }
+
+        public string parseMessage(string message)
+        {
             if (String.IsNullOrEmpty(message))
             {
                 throw new ArgumentNullException();
             }
 
-            message = message.ToLower();
-
-            char[] msg = message.ToCharArray();
-            int i = 0;
-
-            foreach(char c in msg)
-            {   
-                int converter = c;
-
-                if(converter >= 97 && converter <= 119)
-                {
-                    converter += 3;
-                }
-                else if(converter >= 120 && converter <= 122)
-                {
-                    converter -= 23;
-                }
-                else if(converter > 122 && converter < 255)
-                {
-                    throw new ArgumentOutOfRangeException();
-                }
-
-                msg[i] = (char)converter;
-                i++;
-            }
-
-            string cryptedMsg = new string (msg);
-
-            return cryptedMsg;
+            return message.ToLower();
         }
 
-        public string Decrypt(string cryptedMessage)
+        public string scrollArray(string message, bool encrypt)
         {
-            if (String.IsNullOrEmpty(cryptedMessage))
-            {
-                throw new ArgumentNullException();
-            }
-
-            cryptedMessage = cryptedMessage.ToLower();
-
-            char[] charCrypted = cryptedMessage.ToCharArray();
-
+            char[] charMessage = message.ToCharArray();
             int i = 0;
 
-            foreach (char c in charCrypted)
+            foreach (char charAtual in charMessage)
             {
-                int converter = c;
+                int CharEmInt = charAtual;
+                checkInvalid(CharEmInt);
 
-                if (converter >= 100 && converter <= 122)
+                // CRIPTOGRAFAR
+                if (encrypt == true)
                 {
-                    converter -= 3;
-                }
-                else if (converter >= 97 && converter <= 99)
-                {
-                    converter += 23;
-                }
-                else if (converter > 122 && converter < 255)
-                {
-                    throw new ArgumentOutOfRangeException();
+                    if (CharEmInt >= 97 && CharEmInt <= 119)
+                    {
+                        CharEmInt += Constants.salto;  
+                    }
+                    else if (CharEmInt >= 120 && CharEmInt <= 122) // x, y, z
+                    {
+                        CharEmInt -= 23; 
+                    }
                 }
 
-                charCrypted[i] = (char)converter;
+                // DESCRIPTOGRAFAR
+                else
+                {
+                    if (CharEmInt >= 100 && CharEmInt <= 122)
+                    {
+                        CharEmInt -= Constants.salto;
+                    }
+                    else if (CharEmInt >= 97 && CharEmInt <= 99) // a, b, c
+                    {
+                        CharEmInt += 23;
+                    }
+                }
+
+                charMessage[i] = (char)CharEmInt;
                 i++;
             }
 
-
-            string decriptedMessage = new string(charCrypted);
-            return decriptedMessage;
+            return new string(charMessage); 
         }
 
+        public void checkInvalid(int CharEmInt) 
+        {
+            if (!(CharEmInt == 32 || (CharEmInt >= 97 && CharEmInt <= 122 ) || (CharEmInt >= 48 && CharEmInt <= 57)))
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+        }
 
     }
 }
+

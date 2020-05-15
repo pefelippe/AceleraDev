@@ -10,4 +10,4 @@ Results File: C:\Users\pedfe\codenation\csharp-2\Source.TestSubmission\results.x
 Execu‡Æo de Teste Bem-sucedida.
 Total de testes: 9
      Aprovados: 9
-Tempo total: 16,1479 Segundos
+Tempo total: 23,8470 Segundos
