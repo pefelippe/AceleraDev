@@ -49,11 +49,11 @@ namespace Codenation.Challenge
                 {
                     if (CharEmInt >= 97 && CharEmInt <= 119)
                     {
-                        CharEmInt += Constants.salto;  
+                        CharEmInt += Constants.salto;
                     }
                     else if (CharEmInt >= 120 && CharEmInt <= 122) // x, y, z
                     {
-                        CharEmInt -= 23; 
+                        CharEmInt -= 23;
                     }
                 }
 
