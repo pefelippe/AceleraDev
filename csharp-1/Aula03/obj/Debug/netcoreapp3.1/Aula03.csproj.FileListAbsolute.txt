@@ -1,0 +1,13 @@
+C:\Users\pedfe\codenation\csharp-1\Aula03\bin\Debug\netcoreapp3.1\Aula03.exe
+C:\Users\pedfe\codenation\csharp-1\Aula03\bin\Debug\netcoreapp3.1\Aula03.deps.json
+C:\Users\pedfe\codenation\csharp-1\Aula03\bin\Debug\netcoreapp3.1\Aula03.runtimeconfig.json
+C:\Users\pedfe\codenation\csharp-1\Aula03\bin\Debug\netcoreapp3.1\Aula03.runtimeconfig.dev.json
+C:\Users\pedfe\codenation\csharp-1\Aula03\bin\Debug\netcoreapp3.1\Aula03.dll
+C:\Users\pedfe\codenation\csharp-1\Aula03\bin\Debug\netcoreapp3.1\Aula03.pdb
+C:\Users\pedfe\codenation\csharp-1\Aula03\obj\Debug\netcoreapp3.1\Aula03.csprojAssemblyReference.cache
+C:\Users\pedfe\codenation\csharp-1\Aula03\obj\Debug\netcoreapp3.1\Aula03.csproj.CoreCompileInputs.cache
+C:\Users\pedfe\codenation\csharp-1\Aula03\obj\Debug\netcoreapp3.1\Aula03.AssemblyInfoInputs.cache
+C:\Users\pedfe\codenation\csharp-1\Aula03\obj\Debug\netcoreapp3.1\Aula03.AssemblyInfo.cs
+C:\Users\pedfe\codenation\csharp-1\Aula03\obj\Debug\netcoreapp3.1\Aula03.dll
+C:\Users\pedfe\codenation\csharp-1\Aula03\obj\Debug\netcoreapp3.1\Aula03.pdb
+C:\Users\pedfe\codenation\csharp-1\Aula03\obj\Debug\netcoreapp3.1\Aula03.genruntimeconfig.cache
