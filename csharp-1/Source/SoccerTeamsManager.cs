@@ -20,10 +20,7 @@ namespace Codenation.Challenge
 
         public void AddTeam(long id, string name, DateTime createDate, string mainShirtColor, string secondaryShirtColor)
         {
-            if (DictTeams.ContainsKey(id)) // Time não Encontrado
-            {
-                throw new Codenation.Challenge.Exceptions.UniqueIdentifierException();
-            }
+            CheckTeamID(id);
 
             Team NewTeam = new Team()
             {
@@ -35,20 +32,12 @@ namespace Codenation.Challenge
             };
 
             DictTeams.Add(NewTeam.id, NewTeam);
-
         }
 
         public void AddPlayer(long id, long teamId, string name, DateTime birthDate, int skillLevel, decimal salary)
         {
-            if (DictPlayers.ContainsKey(id)) // PlayerID já cadastrado
-            {
-                throw new Codenation.Challenge.Exceptions.UniqueIdentifierException();
-            }
-
-            if (!(DictTeams.ContainsKey(teamId))) // Time não Encontrado
-            {
-                throw new Codenation.Challenge.Exceptions.TeamNotFoundException();
-            }
+            CheckPlayerId(id);
+            ExistTeamId(teamId);
 
             Player NewPlayer = new Player()
             {
@@ -63,43 +52,33 @@ namespace Codenation.Challenge
             DictPlayers.Add(NewPlayer.id, NewPlayer);
         }
 
-        public void SetCaptain(long playerId) //********
+        public void SetCaptain(long playerId) 
         {
-            if (!(DictPlayers.ContainsKey(playerId))) // PlayerID já cadastrado
-            {
-                throw new Codenation.Challenge.Exceptions.PlayerNotFoundException();
-            }
-
-            DictTeams[DictPlayers[playerId].teamId].IdCaptain = playerId;
+            ExistPlayerId(playerId);
+            long PlayerTeamId = DictPlayers[playerId].teamId;
+            DictTeams[PlayerTeamId].IdCaptain = playerId;
         }
 
-        public long GetTeamCaptain(long teamId) //********
+        public long GetTeamCaptain(long teamId) 
         {
-            if (!(DictTeams.ContainsKey(teamId)))
-            {
-                throw new Codenation.Challenge.Exceptions.TeamNotFoundException();
-            }
+            ExistTeamId(teamId);
 
+            if (DictTeams[teamId].IdCaptain == 0) // Captain not Exists
+            {
+                throw new Codenation.Challenge.Exceptions.CaptainNotFoundException();
+            }
             return DictTeams[teamId].IdCaptain;
         }
 
         public string GetPlayerName(long playerId)
         {
-            if (!(DictPlayers.ContainsKey(playerId)))
-            {
-                throw new Codenation.Challenge.Exceptions.PlayerNotFoundException();
-            }
-
+            ExistPlayerId(playerId);
             return DictPlayers[playerId].name;
         }
 
         public string GetTeamName(long teamId)
         {
-            if (!(DictTeams.ContainsKey(teamId)))
-            {
-                throw new Codenation.Challenge.Exceptions.TeamNotFoundException();
-            }
-
+            ExistTeamId(teamId);
             return DictTeams[teamId].name;
         }
 
@@ -114,6 +93,7 @@ namespace Codenation.Challenge
                     TeamPlayers.Add(p.id);
                 }
             }
+
             return TeamPlayers;
         }
 
@@ -122,10 +102,7 @@ namespace Codenation.Challenge
             int BestSkill = 0;
             long BestPlayerId = 0;
 
-            if (!(DictTeams.ContainsKey(teamId)))
-            {
-                throw new Codenation.Challenge.Exceptions.TeamNotFoundException();
-            }
+            ExistTeamId(teamId);
 
             foreach (Player p in DictPlayers.Values)
             {
@@ -139,20 +116,18 @@ namespace Codenation.Challenge
             return BestPlayerId;
         }
 
-        public long GetOlderTeamPlayer(long teamId) //*********
+        public long GetOlderTeamPlayer(long teamId) //**** FUNCIONA?
         {
-            int OlderAge = 0;
+            DateTime OlderAge = new DateTime(0);
             long OlderPlayerId = 0;
 
-            if (!(DictTeams.ContainsKey(teamId)))
-            {
-                throw new Codenation.Challenge.Exceptions.TeamNotFoundException();
-            }
+            ExistTeamId(teamId);
 
             foreach (Player p in DictPlayers.Values)
             {
-                int age = 0; // como fazer ???
-                if ((p.teamId == teamId) && (age > OlderAge))
+                DateTime age = p.birthDate;
+                int result = DateTime.Compare(OlderAge, age);
+                if ((p.teamId == teamId) && (result > 0))
                 {
                     OlderAge = age;
                     OlderPlayerId = p.id;
@@ -162,11 +137,12 @@ namespace Codenation.Challenge
             return OlderPlayerId;
         }
 
-        public List<long> GetTeams()
+        public List<long> GetTeams() //**** FUNCIONA?
         {
+            List<Team> AllTeams = new List<Team>(DictTeams.Values);
 
-            List<Team> AllTeams = new List<Team>(DictTeams.Values); // Lista com todos os id's não ordenados 
             return AllTeams.OrderBy(x => x.id).Select(x => x.id).ToList();
+            
         }
 
         public long GetHigherSalaryPlayer(long teamId)
@@ -174,10 +150,7 @@ namespace Codenation.Challenge
             decimal HighestSalary = 0;
             long RichestPlayerId = 0;
 
-            if (!(DictTeams.ContainsKey(teamId)))
-            {
-                throw new Codenation.Challenge.Exceptions.TeamNotFoundException();
-            }
+            ExistTeamId(teamId);
 
             foreach (Player p in DictPlayers.Values)
             {
@@ -193,11 +166,7 @@ namespace Codenation.Challenge
 
         public decimal GetPlayerSalary(long playerId)
         {
-            if (!(DictPlayers.ContainsKey(playerId)))
-            {
-                throw new Codenation.Challenge.Exceptions.PlayerNotFoundException();
-            }
-
+            ExistPlayerId(playerId);
             return DictPlayers[playerId].salary;
         }
 
@@ -209,10 +178,8 @@ namespace Codenation.Challenge
 
         public string GetVisitorShirtColor(long teamId, long visitorTeamId)
         {
-            if (!(DictTeams.ContainsKey(teamId)) || !(DictTeams.ContainsKey(visitorTeamId)))
-            {
-                throw new Codenation.Challenge.Exceptions.TeamNotFoundException();
-            }
+            ExistTeamId(teamId);
+            ExistTeamId(visitorTeamId);
 
             if (DictTeams[visitorTeamId].corUniformePrincipal == DictTeams[teamId].corUniformePrincipal)
             {
@@ -221,6 +188,43 @@ namespace Codenation.Challenge
 
             return DictTeams[visitorTeamId].corUniformePrincipal;
         }
+
+        // MÉTODOS DE CHECAGEM
+
+        // Antes de Adicionar Novos IDs
+        private void CheckTeamID(long id)
+        {
+            if (DictTeams.ContainsKey(id)) // Time não Encontrado
+            {
+                throw new Codenation.Challenge.Exceptions.UniqueIdentifierException();
+            }
+        }
+
+        private void CheckPlayerId(long id)
+        {
+            if (DictPlayers.ContainsKey(id)) // Time não Encontrado
+            {
+                throw new Codenation.Challenge.Exceptions.UniqueIdentifierException();
+            }
+        }
+
+        // Consultar ID's
+        private void ExistTeamId(long id)
+        {
+            if (!(DictTeams.ContainsKey(id))) // Time não Encontrado
+            {
+                throw new Codenation.Challenge.Exceptions.TeamNotFoundException();
+            }
+        }
+
+        private void ExistPlayerId(long id)
+        {
+            if (!(DictPlayers.ContainsKey(id)))
+            {
+                throw new Codenation.Challenge.Exceptions.PlayerNotFoundException();
+            }
+        }
+
 
     }
 }
