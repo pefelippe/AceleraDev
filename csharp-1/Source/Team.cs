@@ -11,6 +11,6 @@ namespace Source
         public DateTime dataCriacao;
         public string corUniformePrincipal;
         public string corUniformeSecundario;
-        public long captain;
+        public long IdCaptain;
     }
 }

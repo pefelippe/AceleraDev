@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Codenation.Challenge.Exceptions;
 using Source;
 
@@ -61,7 +62,7 @@ namespace Codenation.Challenge
 
             DictPlayers.Add(NewPlayer.id, NewPlayer);
         }
-    
+
         public void SetCaptain(long playerId) //********
         {
             if (!(DictPlayers.ContainsKey(playerId))) // PlayerID já cadastrado
@@ -69,7 +70,7 @@ namespace Codenation.Challenge
                 throw new Codenation.Challenge.Exceptions.PlayerNotFoundException();
             }
 
-            DictTeams[DictPlayers[playerId].teamId].captain = playerId;
+            DictTeams[DictPlayers[playerId].teamId].IdCaptain = playerId;
         }
 
         public long GetTeamCaptain(long teamId) //********
@@ -79,8 +80,8 @@ namespace Codenation.Challenge
                 throw new Codenation.Challenge.Exceptions.TeamNotFoundException();
             }
 
-            return DictTeams[teamId].captain;
-        } 
+            return DictTeams[teamId].IdCaptain;
+        }
 
         public string GetPlayerName(long playerId)
         {
@@ -128,10 +129,10 @@ namespace Codenation.Challenge
 
             foreach (Player p in DictPlayers.Values)
             {
-               if ((p.teamId == teamId) && (p.skillLevel > BestSkill))
+                if ((p.teamId == teamId) && (p.skillLevel > BestSkill))
                 {
                     BestSkill = p.skillLevel;
-                    BestPlayerId = p.id;  
+                    BestPlayerId = p.id;
                 }
             }
 
@@ -163,8 +164,9 @@ namespace Codenation.Challenge
 
         public List<long> GetTeams()
         {
-            List<long> AllTeams = new List<long>(DictTeams.Keys);
-            return AllTeams;
+
+            List<Team> AllTeams = new List<Team>(DictTeams.Values); // Lista com todos os id's não ordenados 
+            return AllTeams.OrderBy(x => x.id).Select(x => x.id).ToList();
         }
 
         public long GetHigherSalaryPlayer(long teamId)
@@ -188,7 +190,7 @@ namespace Codenation.Challenge
 
             return RichestPlayerId;
         }
-        
+
         public decimal GetPlayerSalary(long playerId)
         {
             if (!(DictPlayers.ContainsKey(playerId)))
@@ -198,7 +200,7 @@ namespace Codenation.Challenge
 
             return DictPlayers[playerId].salary;
         }
-        
+
         public List<long> GetTopPlayers(int top) //******
         {
             List<long> TopPlayers = new List<long>();
@@ -207,7 +209,7 @@ namespace Codenation.Challenge
 
         public string GetVisitorShirtColor(long teamId, long visitorTeamId)
         {
-            if ( !(DictTeams.ContainsKey(teamId)) || !(DictTeams.ContainsKey(visitorTeamId)))
+            if (!(DictTeams.ContainsKey(teamId)) || !(DictTeams.ContainsKey(visitorTeamId)))
             {
                 throw new Codenation.Challenge.Exceptions.TeamNotFoundException();
             }
