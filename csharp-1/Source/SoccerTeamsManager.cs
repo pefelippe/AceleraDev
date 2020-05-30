@@ -84,17 +84,13 @@ namespace Codenation.Challenge
 
         public List<long> GetTeamPlayers(long teamId)
         {
-            List<long> TeamPlayers = new List<long>();
-
-            foreach (Player p in DictPlayers.Values)
-            {
-                if (p.teamId == teamId)
-                {
-                    TeamPlayers.Add(p.id);
-                }
-            }
-
-            return TeamPlayers;
+            ExistTeamId(teamId);
+            List<Player> TeamPlayers = new List<Player>(DictPlayers.Values);
+            return TeamPlayers
+                .Where(p => p.teamId == teamId)
+                .Select(p => p.id)
+                .OrderBy(o => o)
+                .ToList();
         }
 
         public long GetBestTeamPlayer(long teamId)
@@ -104,10 +100,11 @@ namespace Codenation.Challenge
 
             ExistTeamId(teamId);
 
-            foreach (Player p in DictPlayers.Values)
+            foreach (Player p in DictPlayers.Values.Where(p => p.teamId == teamId))
             {
-                if ((p.teamId == teamId) && (p.skillLevel > BestSkill))
+                if ((p.skillLevel > BestSkill) || (p.skillLevel == BestSkill && p.id < BestPlayerId))
                 {
+                   
                     BestSkill = p.skillLevel;
                     BestPlayerId = p.id;
                 }
@@ -116,20 +113,19 @@ namespace Codenation.Challenge
             return BestPlayerId;
         }
 
-        public long GetOlderTeamPlayer(long teamId) //**** FUNCIONA?
+        public long GetOlderTeamPlayer(long teamId) 
         {
-            DateTime OlderAge = new DateTime(0);
+            DateTime OlderAge = DateTime.Today;
             long OlderPlayerId = 0;
 
             ExistTeamId(teamId);
 
-            foreach (Player p in DictPlayers.Values)
+            foreach (Player p in DictPlayers.Values.Where(p => (p.teamId == teamId)))
             {
-                DateTime age = p.birthDate;
-                int result = DateTime.Compare(OlderAge, age);
-                if ((p.teamId == teamId) && (result > 0))
+                int result = DateTime.Compare(OlderAge, p.birthDate);
+                if  (result > 0)
                 {
-                    OlderAge = age;
+                    OlderAge = p.birthDate;
                     OlderPlayerId = p.id;
                 }
             }
@@ -137,12 +133,12 @@ namespace Codenation.Challenge
             return OlderPlayerId;
         }
 
-        public List<long> GetTeams() //**** FUNCIONA?
+        public List<long> GetTeams() 
         {
-            List<Team> AllTeams = new List<Team>(DictTeams.Values);
+            List<long> AllTeams = new List<long>(DictTeams.Keys);
 
-            return AllTeams.OrderBy(x => x.id).Select(x => x.id).ToList();
-            
+            return AllTeams.OrderBy(o => o).ToList();
+
         }
 
         public long GetHigherSalaryPlayer(long teamId)
@@ -152,9 +148,9 @@ namespace Codenation.Challenge
 
             ExistTeamId(teamId);
 
-            foreach (Player p in DictPlayers.Values)
+            foreach (Player p in DictPlayers.Values.Where(p=> p.teamId == teamId))
             {
-                if ((p.teamId == teamId) && (p.salary > HighestSalary))
+                if (p.salary > HighestSalary || (p.salary == HighestSalary && p.id < RichestPlayerId))      
                 {
                     HighestSalary = p.salary;
                     RichestPlayerId = p.id;
@@ -170,10 +166,14 @@ namespace Codenation.Challenge
             return DictPlayers[playerId].salary;
         }
 
-        public List<long> GetTopPlayers(int top) //******
+        public List<long> GetTopPlayers(int top) 
         {
-            List<long> TopPlayers = new List<long>();
-            return TopPlayers;
+            List<Player> AllPlayers = new List<Player>(DictPlayers.Values);
+            return (AllPlayers.OrderByDescending(x => x.skillLevel)
+                .Take(top)
+                .Select(player => player.id))
+                .ToList();
+            
         }
 
         public string GetVisitorShirtColor(long teamId, long visitorTeamId)
@@ -191,7 +191,7 @@ namespace Codenation.Challenge
 
         // MÉTODOS DE CHECAGEM
 
-        // Antes de Adicionar Novos IDs
+        // Exceção de tentar duplicar um ID
         private void CheckTeamID(long id)
         {
             if (DictTeams.ContainsKey(id)) // Time não Encontrado
@@ -208,7 +208,7 @@ namespace Codenation.Challenge
             }
         }
 
-        // Consultar ID's
+        // Exceção ao procurar um ID invalido
         private void ExistTeamId(long id)
         {
             if (!(DictTeams.ContainsKey(id))) // Time não Encontrado
