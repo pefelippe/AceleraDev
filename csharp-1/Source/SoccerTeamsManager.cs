@@ -12,6 +12,42 @@ namespace Codenation.Challenge
         Dictionary<long, Team> DictTeams;
         Dictionary<long, Player> DictPlayers;
 
+        // CHECK - Exceção de tentar duplicar um ID
+
+        private void CheckTeamID(long id)
+        {
+            if (DictTeams.ContainsKey(id)) // Time já cadastrado
+            {
+                throw new Codenation.Challenge.Exceptions.UniqueIdentifierException();
+            }
+        }
+
+        private void CheckPlayerId(long id)
+        {
+            if (DictPlayers.ContainsKey(id)) // Id já cadastrado
+            {
+                throw new Codenation.Challenge.Exceptions.UniqueIdentifierException();
+            }
+        }
+
+        // EXIST - Exceção ao procurar um ID invalido
+
+        private void ExistTeamId(long id)
+        {
+            if (!(DictTeams.ContainsKey(id))) // Time não encontrado
+            {
+                throw new Codenation.Challenge.Exceptions.TeamNotFoundException();
+            }
+        }
+
+        private void ExistPlayerId(long id)
+        {
+            if (!(DictPlayers.ContainsKey(id))) // Player não encontrado
+            {
+                throw new Codenation.Challenge.Exceptions.PlayerNotFoundException();
+            }
+        }
+
         public SoccerTeamsManager()
         {
             DictTeams = new Dictionary<long, Team>();
@@ -63,10 +99,11 @@ namespace Codenation.Challenge
         {
             ExistTeamId(teamId);
 
-            if (DictTeams[teamId].IdCaptain == 0) // Captain not Exists
+            if (DictTeams[teamId].IdCaptain == 0) 
             {
                 throw new Codenation.Challenge.Exceptions.CaptainNotFoundException();
             }
+
             return DictTeams[teamId].IdCaptain;
         }
 
@@ -85,52 +122,38 @@ namespace Codenation.Challenge
         public List<long> GetTeamPlayers(long teamId)
         {
             ExistTeamId(teamId);
-            List<Player> TeamPlayers = new List<Player>(DictPlayers.Values);
+
+            var TeamPlayers = new List<Player>(DictPlayers.Values);
+
             return TeamPlayers
-                .Where(p => p.teamId == teamId)
-                .Select(p => p.id)
-                .OrderBy(o => o)
-                .ToList();
+                    .Where(p => p.teamId == teamId)
+                    .Select(p => p.id)
+                    .OrderBy(o => o)
+                    .ToList();
         }
 
         public long GetBestTeamPlayer(long teamId)
         {
-            int BestSkill = 0;
-            long BestPlayerId = 0;
-
             ExistTeamId(teamId);
 
-            foreach (Player p in DictPlayers.Values.Where(p => p.teamId == teamId))
-            {
-                if ((p.skillLevel > BestSkill) || (p.skillLevel == BestSkill && p.id < BestPlayerId))
-                {
-                   
-                    BestSkill = p.skillLevel;
-                    BestPlayerId = p.id;
-                }
-            }
-
-            return BestPlayerId;
+            var BestPlayerId = DictPlayers.Values;
+                               
+            return BestPlayerId.Where(p => p.teamId == teamId)
+                               .OrderByDescending(p => p.skillLevel)
+                               .Select(p => p.id)
+                               .First(); 
         }
 
-        public long GetOlderTeamPlayer(long teamId) 
+        public long GetOlderTeamPlayer(long teamId) //**
         {
-            DateTime OlderAge = DateTime.Today;
-            long OlderPlayerId = 0;
-
             ExistTeamId(teamId);
 
-            foreach (Player p in DictPlayers.Values.Where(p => (p.teamId == teamId)))
-            {
-                int result = DateTime.Compare(OlderAge, p.birthDate);
-                if  (result > 0)
-                {
-                    OlderAge = p.birthDate;
-                    OlderPlayerId = p.id;
-                }
-            }
+            var SeniorPlayerId = DictPlayers.Values.Where(p => p.teamId == teamId)
+                                                   .OrderBy(p => p.birthDate)
+                                                   .Select(p => p.id)
+                                                   .First();
 
-            return OlderPlayerId;
+            return SeniorPlayerId;
         }
 
         public List<long> GetTeams() 
@@ -141,23 +164,17 @@ namespace Codenation.Challenge
 
         }
 
-        public long GetHigherSalaryPlayer(long teamId)
+        public long GetHigherSalaryPlayer(long teamId) 
         {
-            decimal HighestSalary = 0;
-            long RichestPlayerId = 0;
-
             ExistTeamId(teamId);
 
-            foreach (Player p in DictPlayers.Values.Where(p=> p.teamId == teamId))
-            {
-                if (p.salary > HighestSalary || (p.salary == HighestSalary && p.id < RichestPlayerId))      
-                {
-                    HighestSalary = p.salary;
-                    RichestPlayerId = p.id;
-                }
-            }
+            var RichestID = DictPlayers.Values
+                            .Where(p => p.teamId == teamId)
+                            .OrderByDescending(p => p.salary)
+                            .Select(p => p.id)
+                            .First();
 
-            return RichestPlayerId;
+            return RichestID;
         }
 
         public decimal GetPlayerSalary(long playerId)
@@ -169,11 +186,11 @@ namespace Codenation.Challenge
         public List<long> GetTopPlayers(int top) 
         {
             List<Player> AllPlayers = new List<Player>(DictPlayers.Values);
+
             return (AllPlayers.OrderByDescending(x => x.skillLevel)
-                .Take(top)
-                .Select(player => player.id))
-                .ToList();
-            
+                              .Take(top)
+                              .Select(player => player.id))
+                              .ToList();  
         }
 
         public string GetVisitorShirtColor(long teamId, long visitorTeamId)
@@ -188,43 +205,6 @@ namespace Codenation.Challenge
 
             return DictTeams[visitorTeamId].corUniformePrincipal;
         }
-
-        // MÉTODOS DE CHECAGEM
-
-        // Exceção de tentar duplicar um ID
-        private void CheckTeamID(long id)
-        {
-            if (DictTeams.ContainsKey(id)) // Time não Encontrado
-            {
-                throw new Codenation.Challenge.Exceptions.UniqueIdentifierException();
-            }
-        }
-
-        private void CheckPlayerId(long id)
-        {
-            if (DictPlayers.ContainsKey(id)) // Time não Encontrado
-            {
-                throw new Codenation.Challenge.Exceptions.UniqueIdentifierException();
-            }
-        }
-
-        // Exceção ao procurar um ID invalido
-        private void ExistTeamId(long id)
-        {
-            if (!(DictTeams.ContainsKey(id))) // Time não Encontrado
-            {
-                throw new Codenation.Challenge.Exceptions.TeamNotFoundException();
-            }
-        }
-
-        private void ExistPlayerId(long id)
-        {
-            if (!(DictPlayers.ContainsKey(id)))
-            {
-                throw new Codenation.Challenge.Exceptions.PlayerNotFoundException();
-            }
-        }
-
 
     }
 }
