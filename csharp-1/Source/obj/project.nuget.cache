@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "FKuDwpxYoXa+z2Kjq2dnVxByyayPH8QADv455FO5+jdEZL7lLJzSUgmXF3jj74+GS+7sOwebuglIhNQAOtzTBQ==",
+  "dgSpecHash": "cvljIAGG6liiMQHfOqE+WKKkKKfoKh1r7ThkdHHRyc0OboJ8/NWqr7Y4IXAPCX5cN9X63bFZbYfvCYJDLPoWjg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pedfe\\codenation\\csharp-1\\Source\\Source.csproj",
+  "projectFilePath": "C:\\Users\\Pedro Felippe\\Source\\Repos\\pefelippe\\AceleraDev\\csharp-1\\Source\\Source.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pedfe\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\pedfe\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Pedro Felippe\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Pedro Felippe\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

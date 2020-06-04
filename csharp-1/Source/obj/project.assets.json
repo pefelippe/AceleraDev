@@ -180,19 +180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pedfe\\.nuget\\packages\\": {}
+    "C:\\Users\\Pedro Felippe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pedfe\\codenation\\csharp-1\\Source\\Source.csproj",
+      "projectUniqueName": "C:\\Users\\Pedro Felippe\\Source\\Repos\\pefelippe\\AceleraDev\\csharp-1\\Source\\Source.csproj",
       "projectName": "Source",
-      "projectPath": "C:\\Users\\pedfe\\codenation\\csharp-1\\Source\\Source.csproj",
-      "packagesPath": "C:\\Users\\pedfe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pedfe\\codenation\\csharp-1\\Source\\obj\\",
+      "projectPath": "C:\\Users\\Pedro Felippe\\Source\\Repos\\pefelippe\\AceleraDev\\csharp-1\\Source\\Source.csproj",
+      "packagesPath": "C:\\Users\\Pedro Felippe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Pedro Felippe\\Source\\Repos\\pefelippe\\AceleraDev\\csharp-1\\Source\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pedfe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Pedro Felippe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -233,7 +233,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
