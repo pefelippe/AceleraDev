@@ -1,1 +1,2 @@
-codenation.exe/
+# Ignorar o aplicativo da codenation 
+*.exe
