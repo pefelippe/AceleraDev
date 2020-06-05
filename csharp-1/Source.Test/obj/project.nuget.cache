@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2+xP65GflMcgHEVYBUxdhBqmcCOnnSCCP9e+l7itvj8MwPSN/JXeOhUynmXste723H6vff9pPFPk0JOdIvdR0w==",
+  "dgSpecHash": "Jau6EvyDcdiByblFIDvnKakQweqsbZiqDzmkcZntmI2vzWdkclrP/KqZkCBw1y60X1wjRkr+F1wTYCpOquc70w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pedro Felippe\\Source\\Repos\\pefelippe\\AceleraDev\\csharp-1\\Source.Test\\Source.Test.csproj",
+  "projectFilePath": "C:\\Users\\Pedro Felippe\\source\\repos\\pefelippe\\AceleraDev\\csharp-1\\Source.Test\\Source.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pedro Felippe\\.nuget\\packages\\junittestlogger\\1.1.0\\junittestlogger.1.1.0.nupkg.sha512",
     "C:\\Users\\Pedro Felippe\\.nuget\\packages\\microsoft.codecoverage\\16.0.1\\microsoft.codecoverage.16.0.1.nupkg.sha512",

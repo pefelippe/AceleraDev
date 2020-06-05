@@ -5949,11 +5949,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pedro Felippe\\Source\\Repos\\pefelippe\\AceleraDev\\csharp-1\\Source.Test\\Source.Test.csproj",
+      "projectUniqueName": "C:\\Users\\Pedro Felippe\\source\\repos\\pefelippe\\AceleraDev\\csharp-1\\Source.Test\\Source.Test.csproj",
       "projectName": "Source.Test",
-      "projectPath": "C:\\Users\\Pedro Felippe\\Source\\Repos\\pefelippe\\AceleraDev\\csharp-1\\Source.Test\\Source.Test.csproj",
+      "projectPath": "C:\\Users\\Pedro Felippe\\source\\repos\\pefelippe\\AceleraDev\\csharp-1\\Source.Test\\Source.Test.csproj",
       "packagesPath": "C:\\Users\\Pedro Felippe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pedro Felippe\\Source\\Repos\\pefelippe\\AceleraDev\\csharp-1\\Source.Test\\obj\\",
+      "outputPath": "C:\\Users\\Pedro Felippe\\source\\repos\\pefelippe\\AceleraDev\\csharp-1\\Source.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pedro Felippe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5969,8 +5969,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Pedro Felippe\\Source\\Repos\\pefelippe\\AceleraDev\\csharp-1\\Source\\Source.csproj": {
-              "projectPath": "C:\\Users\\Pedro Felippe\\Source\\Repos\\pefelippe\\AceleraDev\\csharp-1\\Source\\Source.csproj"
+            "C:\\Users\\Pedro Felippe\\source\\repos\\pefelippe\\AceleraDev\\csharp-1\\Source\\Source.csproj": {
+              "projectPath": "C:\\Users\\Pedro Felippe\\source\\repos\\pefelippe\\AceleraDev\\csharp-1\\Source\\Source.csproj"
             }
           }
         }
