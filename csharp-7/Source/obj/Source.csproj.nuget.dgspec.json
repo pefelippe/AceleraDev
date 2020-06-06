@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pedro Felippe\\Codenation\\csharp-7\\Source\\Source.csproj": {}
+    "C:\\Users\\Pedro Felippe\\codenation\\csharp-7\\Source\\Source.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pedro Felippe\\Codenation\\csharp-7\\Source\\Source.csproj": {
+    "C:\\Users\\Pedro Felippe\\codenation\\csharp-7\\Source\\Source.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pedro Felippe\\Codenation\\csharp-7\\Source\\Source.csproj",
+        "projectUniqueName": "C:\\Users\\Pedro Felippe\\codenation\\csharp-7\\Source\\Source.csproj",
         "projectName": "Source",
-        "projectPath": "C:\\Users\\Pedro Felippe\\Codenation\\csharp-7\\Source\\Source.csproj",
+        "projectPath": "C:\\Users\\Pedro Felippe\\codenation\\csharp-7\\Source\\Source.csproj",
         "packagesPath": "C:\\Users\\Pedro Felippe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pedro Felippe\\Codenation\\csharp-7\\Source\\obj\\",
+        "outputPath": "C:\\Users\\Pedro Felippe\\codenation\\csharp-7\\Source\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pedro Felippe\\AppData\\Roaming\\NuGet\\NuGet.Config",

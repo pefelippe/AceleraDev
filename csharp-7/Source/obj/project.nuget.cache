@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S9Wqcwiwd8tvBOjv0RrOfgY/9K7lk0C+6jSNMmGYHhOZ04eM8lb4f56zY+OeCfFIxCruPKGCzLZncWQRB8x9pQ==",
+  "dgSpecHash": "SVgWld7elljSRsOlpwTu94haTj/W4sX4oMX7SQahGrQII1wNS5/r4kAXJUS9vIEGVWv9OWYkKCAThhnTegY4LA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pedro Felippe\\Codenation\\csharp-7\\Source\\Source.csproj",
+  "projectFilePath": "C:\\Users\\Pedro Felippe\\codenation\\csharp-7\\Source\\Source.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pedro Felippe\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Pedro Felippe\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",

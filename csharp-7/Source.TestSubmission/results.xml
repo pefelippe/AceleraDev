@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testsuites time="0.052" tests="52" failures="52">
+  <testsuite id="0" name="Source.TestSubmission.dll" tests="52" failures="52" time="0.052">
+    <testcase classname="Codenation.Challenge.AccelerationModelTest" name="Codenation.Challenge.AccelerationModelTest.Should_Has_Table" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.AccelerationModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\AccelerationModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.AccelerationModelTest" name="Codenation.Challenge.AccelerationModelTest.Should_Has_Field(fieldName: &quot;created_at&quot;, isNullable: False, fieldType: typeof(System.DateTime), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.AccelerationModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\AccelerationModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.AccelerationModelTest" name="Codenation.Challenge.AccelerationModelTest.Should_Has_Field(fieldName: &quot;id&quot;, isNullable: False, fieldType: typeof(int), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.AccelerationModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\AccelerationModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.AccelerationModelTest" name="Codenation.Challenge.AccelerationModelTest.Should_Has_Field(fieldName: &quot;challenge_id&quot;, isNullable: False, fieldType: typeof(int), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.AccelerationModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\AccelerationModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.AccelerationModelTest" name="Codenation.Challenge.AccelerationModelTest.Should_Has_Field(fieldName: &quot;name&quot;, isNullable: False, fieldType: typeof(string), fieldSize: 100)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.AccelerationModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\AccelerationModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.AccelerationModelTest" name="Codenation.Challenge.AccelerationModelTest.Should_Has_Field(fieldName: &quot;slug&quot;, isNullable: False, fieldType: typeof(string), fieldSize: 50)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.AccelerationModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\AccelerationModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.AccelerationModelTest" name="Codenation.Challenge.AccelerationModelTest.Should_Has_Primary_Key" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.AccelerationModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\AccelerationModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.AccelerationModelTest" name="Codenation.Challenge.AccelerationModelTest.Should_Has_Children_Navigation(childrenTable: &quot;candidate&quot;)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.AccelerationModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\AccelerationModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.AccelerationModelTest" name="Codenation.Challenge.AccelerationModelTest.Should_Has_Foreing_Key(fieldName: &quot;challenge_id&quot;, relatedTable: &quot;challenge&quot;, isNullable: False, relatedKey: &quot;id&quot;)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.AccelerationModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\AccelerationModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateModelTest" name="Codenation.Challenge.CandidateModelTest.Should_Has_Foreing_Key(fieldName: &quot;company_id&quot;, relatedTable: &quot;company&quot;, isNullable: False, relatedKey: &quot;id&quot;)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CandidateModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CandidateModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateModelTest" name="Codenation.Challenge.CandidateModelTest.Should_Has_Foreing_Key(fieldName: &quot;user_id&quot;, relatedTable: &quot;user&quot;, isNullable: False, relatedKey: &quot;id&quot;)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CandidateModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CandidateModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateModelTest" name="Codenation.Challenge.CandidateModelTest.Should_Has_Foreing_Key(fieldName: &quot;acceleration_id&quot;, relatedTable: &quot;acceleration&quot;, isNullable: False, relatedKey: &quot;id&quot;)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CandidateModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CandidateModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateModelTest" name="Codenation.Challenge.CandidateModelTest.Should_Has_Table" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CandidateModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CandidateModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateModelTest" name="Codenation.Challenge.CandidateModelTest.Should_Has_Field(fieldName: &quot;company_id&quot;, isNullable: False, fieldType: typeof(int), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CandidateModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CandidateModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateModelTest" name="Codenation.Challenge.CandidateModelTest.Should_Has_Field(fieldName: &quot;user_id&quot;, isNullable: False, fieldType: typeof(int), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CandidateModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CandidateModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateModelTest" name="Codenation.Challenge.CandidateModelTest.Should_Has_Field(fieldName: &quot;acceleration_id&quot;, isNullable: False, fieldType: typeof(int), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CandidateModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CandidateModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateModelTest" name="Codenation.Challenge.CandidateModelTest.Should_Has_Field(fieldName: &quot;created_at&quot;, isNullable: False, fieldType: typeof(System.DateTime), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CandidateModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CandidateModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateModelTest" name="Codenation.Challenge.CandidateModelTest.Should_Has_Field(fieldName: &quot;status&quot;, isNullable: False, fieldType: typeof(int), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CandidateModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CandidateModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CandidateModelTest" name="Codenation.Challenge.CandidateModelTest.Should_Has_Primary_Key" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CandidateModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CandidateModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.ChallengeModelTest" name="Codenation.Challenge.ChallengeModelTest.Should_Has_Field(fieldName: &quot;name&quot;, isNullable: False, fieldType: typeof(string), fieldSize: 100)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.ChallengeModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\ChallengeModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.ChallengeModelTest" name="Codenation.Challenge.ChallengeModelTest.Should_Has_Field(fieldName: &quot;slug&quot;, isNullable: False, fieldType: typeof(string), fieldSize: 50)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.ChallengeModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\ChallengeModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.ChallengeModelTest" name="Codenation.Challenge.ChallengeModelTest.Should_Has_Field(fieldName: &quot;id&quot;, isNullable: False, fieldType: typeof(int), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.ChallengeModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\ChallengeModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.ChallengeModelTest" name="Codenation.Challenge.ChallengeModelTest.Should_Has_Field(fieldName: &quot;created_at&quot;, isNullable: False, fieldType: typeof(System.DateTime), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.ChallengeModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\ChallengeModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.ChallengeModelTest" name="Codenation.Challenge.ChallengeModelTest.Should_Has_Children_Navigation(childrenTable: &quot;acceleration&quot;)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.ChallengeModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\ChallengeModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.ChallengeModelTest" name="Codenation.Challenge.ChallengeModelTest.Should_Has_Children_Navigation(childrenTable: &quot;submission&quot;)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.ChallengeModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\ChallengeModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.ChallengeModelTest" name="Codenation.Challenge.ChallengeModelTest.Should_Has_Primary_Key" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.ChallengeModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\ChallengeModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.ChallengeModelTest" name="Codenation.Challenge.ChallengeModelTest.Should_Has_Table" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.ChallengeModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\ChallengeModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyModelTest" name="Codenation.Challenge.CompanyModelTest.Should_Has_Field(fieldName: &quot;id&quot;, isNullable: False, fieldType: typeof(int), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CompanyModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CompanyModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyModelTest" name="Codenation.Challenge.CompanyModelTest.Should_Has_Field(fieldName: &quot;slug&quot;, isNullable: False, fieldType: typeof(string), fieldSize: 50)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CompanyModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CompanyModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyModelTest" name="Codenation.Challenge.CompanyModelTest.Should_Has_Field(fieldName: &quot;created_at&quot;, isNullable: False, fieldType: typeof(System.DateTime), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CompanyModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CompanyModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyModelTest" name="Codenation.Challenge.CompanyModelTest.Should_Has_Field(fieldName: &quot;name&quot;, isNullable: False, fieldType: typeof(string), fieldSize: 100)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CompanyModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CompanyModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyModelTest" name="Codenation.Challenge.CompanyModelTest.Should_Has_Table" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CompanyModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CompanyModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyModelTest" name="Codenation.Challenge.CompanyModelTest.Should_Has_Primary_Key" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CompanyModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CompanyModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyModelTest" name="Codenation.Challenge.CompanyModelTest.Should_Has_Children_Navigation(childrenTable: &quot;candidate&quot;)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.CompanyModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\CompanyModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.SubmissionModelTest" name="Codenation.Challenge.SubmissionModelTest.Should_Has_Primary_Key" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.SubmissionModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\SubmissionModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.SubmissionModelTest" name="Codenation.Challenge.SubmissionModelTest.Should_Has_Field(fieldName: &quot;user_id&quot;, isNullable: False, fieldType: typeof(int), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.SubmissionModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\SubmissionModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.SubmissionModelTest" name="Codenation.Challenge.SubmissionModelTest.Should_Has_Field(fieldName: &quot;created_at&quot;, isNullable: False, fieldType: typeof(System.DateTime), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.SubmissionModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\SubmissionModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.SubmissionModelTest" name="Codenation.Challenge.SubmissionModelTest.Should_Has_Field(fieldName: &quot;challenge_id&quot;, isNullable: False, fieldType: typeof(int), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.SubmissionModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\SubmissionModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.SubmissionModelTest" name="Codenation.Challenge.SubmissionModelTest.Should_Has_Field(fieldName: &quot;score&quot;, isNullable: False, fieldType: typeof(decimal), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.SubmissionModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\SubmissionModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.SubmissionModelTest" name="Codenation.Challenge.SubmissionModelTest.Should_Has_Foreing_Key(fieldName: &quot;challenge_id&quot;, relatedTable: &quot;challenge&quot;, isNullable: False, relatedKey: &quot;id&quot;)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.SubmissionModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\SubmissionModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.SubmissionModelTest" name="Codenation.Challenge.SubmissionModelTest.Should_Has_Foreing_Key(fieldName: &quot;user_id&quot;, relatedTable: &quot;user&quot;, isNullable: False, relatedKey: &quot;id&quot;)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.SubmissionModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\SubmissionModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.SubmissionModelTest" name="Codenation.Challenge.SubmissionModelTest.Should_Has_Table" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.SubmissionModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\SubmissionModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserModelTest" name="Codenation.Challenge.UserModelTest.Should_Has_Field(fieldName: &quot;nickname&quot;, isNullable: False, fieldType: typeof(string), fieldSize: 50)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.UserModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\UserModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserModelTest" name="Codenation.Challenge.UserModelTest.Should_Has_Field(fieldName: &quot;password&quot;, isNullable: False, fieldType: typeof(string), fieldSize: 255)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.UserModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\UserModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserModelTest" name="Codenation.Challenge.UserModelTest.Should_Has_Field(fieldName: &quot;full_name&quot;, isNullable: False, fieldType: typeof(string), fieldSize: 100)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.UserModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\UserModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserModelTest" name="Codenation.Challenge.UserModelTest.Should_Has_Field(fieldName: &quot;created_at&quot;, isNullable: False, fieldType: typeof(System.DateTime), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.UserModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\UserModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserModelTest" name="Codenation.Challenge.UserModelTest.Should_Has_Field(fieldName: &quot;id&quot;, isNullable: False, fieldType: typeof(int), fieldSize: null)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.UserModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\UserModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserModelTest" name="Codenation.Challenge.UserModelTest.Should_Has_Field(fieldName: &quot;email&quot;, isNullable: False, fieldType: typeof(string), fieldSize: 100)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.UserModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\UserModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserModelTest" name="Codenation.Challenge.UserModelTest.Should_Has_Table" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.UserModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\UserModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserModelTest" name="Codenation.Challenge.UserModelTest.Should_Has_Primary_Key" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.UserModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\UserModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserModelTest" name="Codenation.Challenge.UserModelTest.Should_Has_Children_Navigation(childrenTable: &quot;candidate&quot;)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.UserModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\UserModelTest.cs:line 10</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserModelTest" name="Codenation.Challenge.UserModelTest.Should_Has_Children_Navigation(childrenTable: &quot;submission&quot;)" time="0.0010000">
+      <error message="System.Data.SqlClient.SqlException : Cannot open database &quot;Codenation&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'DESKTOP-8CJV8VE\Pedro Felippe'.">   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Codenation.Challenge.Models.CodenationContext..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source\Models\CodenationContext.cs:line 21
+   at Codenation.Challenge.UserModelTest..ctor() in C:\Users\Pedro Felippe\codenation\csharp-7\Source.TestSubmission\UserModelTest.cs:line 10</error>
+    </testcase>
+  </testsuite>
+</testsuites>
