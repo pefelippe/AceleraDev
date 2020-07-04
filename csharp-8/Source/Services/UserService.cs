@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using Codenation.Challenge.Models;
 
 namespace Codenation.Challenge.Services
@@ -7,33 +8,53 @@ namespace Codenation.Challenge.Services
     public class UserService : IUserService
     {
         CodenationContext _context;
+
         public UserService(CodenationContext context)
         {
             _context = context;
         }
 
-        public IList<User> FindByAccelerationName(string name)
+        public IList<User> FindByAccelerationName(string name) // retornar uma lista de usuários
         {
-            throw new System.NotImplementedException();
+            return _context.Accelerations
+                 .Where(x => x.Name == name)
+                 .SelectMany(x => x.Candidates)
+                 .Select(x => x.User)
+                 .ToList();
+         }
+
+        public IList<User> FindByCompanyId(int companyId) // retornar uma lista de usuários
+        {
+            return _context.Candidates
+                   .Where(x => x.CompanyId == companyId)
+                   .Select(x => x.User)
+                   .Distinct()
+                   .ToList();
         }
 
-        public IList<User> FindByCompanyId(int companyId)
+        public User FindById(int id) // retornar um usuário 
         {
-            throw new System.NotImplementedException();
-        }
-
-        public User FindById(int id)
-        {
-            var user = _context.Users
+            return _context.Users
                         .Where(x => x.Id == id)
                         .First();
-
-            return user;
+ 
         }
 
         public User Save(User user)
         {
-            throw new System.NotImplementedException();
+            if (user.Id == 0)
+            {
+                _context.Users.Add(user);
+                _context.SaveChanges();
+                return _context.Users.Last();
+            }
+            else
+            {
+                var update = _context.Users.Where(x => x.Id == user.Id).First();
+                update = user;
+                _context.SaveChanges();
+                return update;
+            }
         }
     }
 }
